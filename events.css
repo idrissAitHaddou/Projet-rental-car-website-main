@@ -1,0 +1,681 @@
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+main{
+  width: 100%;
+}
+
+
+/* ** START STYLE OF MENU */
+.showMenu{
+    display: none;
+    position: absolute;
+    right: 2%;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+    width: 80%;
+    margin: auto;
+    background-color: black;
+  }
+  #check{
+      display: none;
+  }
+  a .mainlogo{
+      width: 40px;
+      margin-top: 6px;
+  }
+  .menu ul {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    justify-content: space-between;
+    margin-right: 2%;
+    list-style: none;
+  }
+  
+  .menu ul li a {
+    white-space: nowrap;
+    padding: 0 30px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+  }
+  .menu ul li a:hover {
+    color: var(--mainColor);
+    text-decoration: none;
+  }
+  
+  .menu ul li a:hover {
+    text-shadow: 0px 0px 0 rgb(88, 88, 88), 1px 1px 0 rgb(250, 249, 249),
+      2px 2px 0 rgb(255, 255, 255), 3px 3px 0 rgb(252, 249, 249), 4px 4px 0 rgb(231, 229, 227),
+      5px 5px 0 rgb(82, 81, 81), 6px 6px 0 rgb(245, 245, 244);
+  }
+  
+  .mainlogo {
+    width: 12%;
+    height: 70%;
+    margin: 20px 20px;
+  }
+  
+  .signin-button {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: 11px;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    border-radius: 10px;
+    width: 5vw;
+    height: 5vh;
+    box-shadow: 1px 1px 1px rgb(250 250 252), 1px 1px 1px rgb(0 0 0),
+      1px 1px 1px rgb(250 252 250);
+      white-space: nowrap;
+  }
+  
+  .signup-button {
+    background-color: white;
+    font-size: 11px;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    border-radius: 10px;
+    width: 5vw;
+    height: 5vh;
+    box-shadow: 1px 1px 1px rgb(0 0 0), 1px 1px 1px rgb(255 255 255),
+      1px 8px 10px rgb(0 0 0);
+      white-space: nowrap;
+  }
+  
+
+  /* ** START STYLE OF SECTION MAIN */
+
+  .main{
+      display: flex;
+      width: 100vw;
+      height: 400px;
+      color: white;
+      background-color: black;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      margin-left: -20px;
+  }
+  .main div{
+    width: 50%;
+    height: 100%;
+   }
+  
+   .main div:first-child{
+       text-align: center;
+       padding-top: 30px;
+       margin-top: 10px;
+   }
+   .main div:last-child{
+    background-image: url("image/cars/whiteCar.png");
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: center;
+    padding-bottom: 30px;
+
+   }
+   .main div:first-child h1{
+       font-size: 60px;
+   }
+
+   .click-menu img{
+       display: none;
+   }
+   .main div button{
+     background-color: white;
+     color: black;
+     padding: 10px 40px;
+     position: relative;
+     z-index: 20;
+     border: 1px solid black;
+     border-radius: 10px;
+   }
+   .main div button:hover{
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+  }
+   .main div p{
+     font-size: 20px;
+     margin-top: -10px;
+     position: relative;
+     z-index: 20;
+   }
+
+   @media only screen and (max-width:1028px){
+    .main div:last-child{
+        width: 70%;
+    }
+    .main div:first-child{
+        width: 30%;
+    }
+    .main div:first-child h1{
+        font-size: 40px;
+    }
+   }
+   @media only screen and (max-width:750px){
+    .main{
+        display: inline-block;
+    }
+    .main div:first-child{
+        width: 100%;
+        text-align: center;
+    }
+    .main div:last-child{
+        width: 100%;
+        margin-top: -160px;
+        margin-left: -60px;
+    }
+
+/* ** -------- start style screen of menu -------------- */
+
+    .showMenu{
+        display: block;
+        width: 40px;
+        height: 40px;
+        float: right;
+        margin: 10px;
+    }
+
+    .click-menu img{
+        display: block;
+        right: 10%;
+        width: 50px;
+        height: 50px;
+        margin-top: -72px;
+        position: absolute;
+    }
+
+    a .mainlogo {
+        position: relative;
+        left: -20%;
+        width:60px !important;
+        height: 50px !important;
+        margin-top: 30px !important;
+      }
+
+    .menu {
+        display: inline-block;
+        justify-content: space-between;
+        padding: 0 100px;
+        width: 100%;
+        margin: auto;
+        background-color: black;
+        border-bottom: 1px solid white;
+      }
+      .menu ul{
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        margin-top: 50px;
+    }
+      .menu ul li a{
+          display: inline-block;
+          margin-bottom: 50px;
+      }
+      .menu ul li button{
+        margin-bottom: 30px;
+        width: 100px;
+    }
+
+   }
+
+
+   @media only screen and (min-width:750px) and (max-width:1028PX){
+    a .mainlogo {
+        position: absolute;
+        left: 0%;
+        width:60px !important;
+        height: 50px !important;
+        margin-top: 10px !important;
+      }
+      .menu{
+          display: flex !important;
+      }
+      .menu ul li a {
+        padding: 0 10px;
+      }
+      .menu ul li button{
+        width: 80px;
+        margin-left: 2px;
+      }
+
+   }
+
+   @media only screen and (min-width:1028PX){
+    .menu{
+        display: flex !important;
+    }
+   }
+
+
+
+
+   /* start style section description */
+
+   .section_description{
+     display: block;
+     width: 100%;
+     margin-top: 40px;
+     padding-top: 60px;
+   }
+   .section_description div,.section_description p{
+     width: 80%;
+     display: block;
+     color: black;
+     margin: auto;
+     font-size: 30px;
+     text-align: center;
+     margin-bottom: 10px;
+     letter-spacing: 2px;
+   }
+   .section_description div div img:hover{
+     transform: rotate(360deg);
+     transition: 2s;
+   }
+   @media only screen and (max-width:750px){
+    .section_description div,.section_description p{
+      font-size: 18px;
+    }
+   }
+
+
+
+   /* ** START STYLE OF SECTION EVENTS ** */
+
+
+   .sectionEvents{
+     display: flex !important;
+     width: 100%;
+     color: black;
+     height: 400px;
+     padding-left: 30px;
+     padding-right: 30px;
+     background-image: url("image/cars/Volkswagen\ Illustrated.gif");
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     margin-top: 100px;
+     margin-bottom: 100px;
+     letter-spacing: 2px;
+   }
+   .sectionEvents div{
+     width: 50% !important;
+     height: 100%;
+   }
+   .sectionEvents div:first-child{
+     border-right: 1px solid white !important;
+   }
+   .sectionEvents div:first-child h1{
+    line-height: 200px;
+   }
+   .sectionEvents div:first-child button{
+    padding: 20px 50px;
+    text-align: center;
+    border-radius: 10px;
+   }
+   .sectionEvents div:first-child button:hover{
+     background-color: black;
+     border: 1px solid white;
+     color: white;
+   }
+
+   .sectionEvents div:last-child p{
+    padding: 20px 10px;
+    margin-top: 40px;
+    font-size: 20px;
+    padding-left: 20px;
+   }
+
+
+   @media only screen and (max-width:1028px){
+    .sectionEvents{
+      padding-left: 5px;
+      padding-right: 30px;
+    }
+    .sectionEvents div:first-child h1{
+      line-height: 25px;
+      margin-top: 100px;
+      font-size:20px;
+     }
+     .sectionEvents div:first-child button{
+      padding: 10px 10px;
+      white-space: nowrap;
+     }
+  
+     .sectionEvents div:last-child p{
+      font-size: 12px;
+     }
+  
+   }
+
+
+
+
+
+
+/* ** ----------  Section Polyvalent -------------- */
+
+   .Polyvalent{
+     display: flex;
+     width: 100%;
+     height: 400px;
+     color: white;
+   }
+   .Polyvalent div:first-child{
+    width: 40%;
+  }
+   .Polyvalent div:last-child{
+     width: 60%;
+     background-color: white;
+     color: black !important;
+   }
+   .Polyvalent div:first-child{
+     background-image: url("image/man.jpg");
+     background-size: cover;
+     background-position: center;
+   }
+
+   .Polyvalent div:last-child P,.Polyvalent div:last-child h1{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .Polyvalent div:last-child P{
+    margin-top: 100px;
+  }
+
+  .Polyvalent div:last-child h1{
+    margin-top: 20px;
+  }
+
+
+
+/* ** ------------ renouvelee ------------ **/
+
+  .renouvelee{
+    width: 100%;
+    text-align: center;
+    color: black;
+    padding: 70px 10px;
+  }
+
+  .sectionRenouvelee{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 500px;
+    padding: 40px 10px;
+    background-color: white;
+  }
+   .sectionRenouvelee div{
+    width: 30% !important;
+    height: 100% !important;
+    border: 1px solid rgb(209, 204, 204);
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    padding: 100px 0px;
+   }
+
+   .sectionRenouvelee div p{
+    display: none;
+   }
+   .sectionRenouvelee div p{
+     width: 70%;
+     margin: auto;
+   }
+
+ 
+   .sectionRenouvelee div:hover p{
+     display: block;
+   }
+   .sectionRenouvelee div:hover h1{
+     font-size: 40px;
+   }
+
+
+   .sectionRenouvelee div:nth-child(1):hover{
+    border: none;
+    box-shadow:  2px 2px 4px black ,3px 3px 4px white,
+                 -2px -2px 4px black ,-3px -3px 4px white;
+   background-image: url("image/cars/Ncar2.jpg");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   transform: rotate(1deg);
+
+  }
+   .sectionRenouvelee div:nth-child(1){
+    background-image: url("image/cars/Ncar1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+
+   .sectionRenouvelee div:nth-child(2):hover{
+    border: none;
+    box-shadow:  2px 2px 4px black ,3px 3px 4px white,
+                 -2px -2px 4px black ,-3px -3px 4px white;
+   background-image: url("image/cars/Ncar4.jpg");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   transform: rotate(1deg);
+
+  }
+   .sectionRenouvelee div:nth-child(2){
+    background-image: url("image/cars/Ncar3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+   
+   .sectionRenouvelee div:nth-child(3):hover{
+    border: none;
+    box-shadow:  2px 2px 4px black ,3px 3px 4px white,
+                 -2px -2px 4px black ,-3px -3px 4px white;
+   background-image: url("image/cars/Ncar6.jpg");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   transform: rotate(1deg);
+
+  }
+   .sectionRenouvelee div:nth-child(3){
+    background-image: url("image/cars/Ncar5.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   @media only screen and (max-width:1028px){
+    .sectionRenouvelee{
+      display: inline;
+    }
+    .sectionRenouvelee div{
+      width: 80% !important;
+      margin: 20px auto !important;
+    }
+    .sectionRenouvelee div:hover{
+      border: none;
+      box-shadow:  2px 2px 4px black ,3px 3px 4px white,
+                   -2px -2px 4px black ,-3px -3px 4px white;
+     background-image: url("image/gif/cantactback.jpg");
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     transform: rotate(0deg);
+ 
+    }
+
+   }
+
+
+   /* ** -------------  START STYLE LAST SECTION -----------------** */
+
+
+
+
+   .lastsEction{
+    display: flex !important;
+    width: 100%;
+    color: white;
+    height: 400px;
+    padding: 0px 30px;
+    padding-right: 30px;
+    background-image: url("image/carAn.gif");
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    justify-content: space-between;
+  }
+  .lastsEction div{
+    width: 20%;
+    height: 300px;
+    margin: 40px 0px 0px 0px;
+    border: 1px solid #22e7dd;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    background-image: url("image/carAn.gif");
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+  }
+  .lastsEction div button{
+    padding: 10px 40px;
+    background-color: rgb(34, 231, 221);
+    border: 1px solid white;
+    border-radius: 10px;
+  }
+  .lastsEction div button:hover{
+    padding: 10px 40px;
+    color: rgb(34, 231, 221);
+    background-color: black;
+    border: 1px solid rgb(34, 231, 221);
+    border-radius: 10px;
+  }
+  .lastsEction div img{
+    width: 100%;
+    height: 140px;
+  }
+
+  @media only screen and (max-width:750px){
+    .lastsEction{
+      display: inline !important;
+      background-image: none;
+    }
+    .lastsEction div{
+      width:70%;
+      height: 100%;
+      margin: 5% auto 0px auto !important;
+    }
+    .lastsEction div button{
+      margin-bottom: 20px;
+    }
+  }
+
+
+   /* ** -------------  START STYLE FOOTER -----------------** */
+   
+.footer {
+  width: 85%;
+  height: 8vh;
+  overflow: hidden;
+  border-radius: 40px 40px 0px 0px;
+  background-color: black;
+  position: relative;
+  bottom: 0%;
+  right: 35%;
+  transform: translate(50%, 50%);
+  box-shadow: 1px 1px 4px rgb(250 250 252), 2px 3px 1px rgb(0 0 0),
+    3px 4px 1px rgb(250 252 250);
+}
+.footer {
+  display: flex;
+  flex-basis: 100%;
+  justify-content: space-evenly;
+}
+.twitteryoutube{
+  display: flex;
+  width: 40px;
+  height: 40px;
+}
+.copyright {
+  display: flex;
+  flex-direction: column-reverse;
+  text-align: center;
+  color: white;
+  font-size: 12px;
+  justify-content: center;
+}
+.facebookinsta{
+  display: flex;
+  width: 40px;
+    height: 40px;
+}
+
+.lineicons {
+  align-items: center;
+  display: flex;
+  width: 15vw;
+  JUSTIFY-CONTENT: space-evenly;
+}
+h3{
+  font-weight: 400;
+}
+
+.copyright {
+  display: flex;
+  flex-direction: column-reverse;
+  text-align: center;
+  color: white;
+  font-size: 12px;
+  justify-content: center;
+}
+
+
+@media only screen and (max-width:1028px){
+ .lineicons img{
+   width: 20px;
+   height: 20px;
+ }
+}

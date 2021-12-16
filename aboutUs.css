@@ -1,0 +1,260 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+
+
+main{
+    width: 100%;
+}
+ aside{
+     display: inline-block;
+     width: 50px;
+     height: 120px;
+     position: absolute;
+     position: fixed;
+     right: 0px;
+     top: 50%;
+     z-index: 1000;
+ }
+ aside div:nth-child(1){
+   width: 100%;
+   height: 30%;
+   margin-bottom: 4px;
+   background-color: black;
+   background-image: url("image/Vector.svg");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: 70%;
+   border-radius: 10px;
+   border: 1px solid white;
+ }
+ aside div:nth-child(2){
+    width: 100%;
+    height: 30%;
+    margin-bottom: 4px;
+    background-color: black;
+    background-image: url("image/clarity_car-line.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    border-radius: 10px;
+    border: 1px solid white;
+  }
+  aside div:nth-child(3){
+    width: 100%;
+    height: 30%;
+    margin-bottom: 4px;
+    background-color: black;
+    background-image: url("image/bx_bx-cable-car.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    border-radius: 10px;
+    border: 1px solid white;
+  }
+
+
+   /* start style section Main */
+
+   .sectionMain{
+       width: 100vw;
+       height: 400px;
+       background-image: url("image/cars/car5.jpg");
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
+       margin-left: -20px;
+   }
+/* start style section Aboout Us */
+  .setionAboutUs{
+      width: 100%;
+      height: 640px;
+      display: flex;
+      background-color: white;
+      color: black;
+  }
+
+  .setionAboutUs div:first-child{
+      width: 40%;
+      height: 100%;
+      padding: 20px 30px;
+      text-align: center;
+  }
+  .setionAboutUs div:first-child p{
+      width: 70%;
+      margin: auto;
+      font-size: 14px;
+      text-align: center;
+  }
+  .setionAboutUs div:first-child button{
+      background-color: #62C8DF;
+      border: 1px solid #4995a7;
+      border-radius: 10px;
+      padding: 15px 40px;
+      margin-left: 75px;
+      float: left !important;
+      color: white;
+  }
+  .setionAboutUs div:last-child{
+    width: 59%;
+    height: 90%;
+    background-image: url("image/carAbout.jpg");
+    background-position: bottom;
+    background-size:cover;
+    background-repeat: no-repeat;
+    margin-top: 30px;
+}
+
+
+@media only screen and (max-width:750px){
+    .setionAboutUs{
+        width: 100%;
+        height: 640px;
+        display: inline-block;
+        background-color: white;
+        color: black;
+    }
+    .setionAboutUs div:first-child{
+        width: 100%;
+    }
+    .setionAboutUs div:first-child p{
+        font-size: 13px;
+    }
+    .setionAboutUs div:last-child{
+        width: 100% !important;
+        height: 40% !important;
+        border: 10px solid white;
+        margin: -40px auto auto auto;
+        background-image: url("image/carAbout.jpg");
+        background-position: bottom;
+        background-size:50%;
+        background-repeat: no-repeat;
+    }
+
+    .setionAboutUs div:first-child button{
+        margin-left: 32%;
+    }
+}
+
+@media only screen and (max-width:1220px) and (min-width:750px){
+
+    .setionAboutUs{
+        width: 100%;
+        height: 640px;
+        display: inline-block;
+        background-color: white;
+        color: black;
+    }
+    .setionAboutUs div:first-child{
+        width: 100%;
+    }
+    .setionAboutUs div:first-child p{
+        font-size: 12px;
+    }
+    .setionAboutUs div:last-child{
+        width: 100% !important;
+        height: 40% !important;
+        border: 10px solid white;
+        margin: -270px auto auto auto;
+        background-image: url("image/carAbout.jpg");
+        background-position: bottom;
+        background-size:30%;
+        background-repeat: no-repeat;
+    }
+    .setionAboutUs div:first-child button{
+        margin-left: 40%;
+    }
+}
+
+
+.quetions{
+      color: black; 
+      width: 70%;
+      margin:auto;
+      text-align:center;
+      padding: 40px 0px;
+}
+
+
+.setionQuetions{
+      width: 100%;
+      height: 370px;
+      display: inline-block;
+      background-color: white;
+      color: black;
+      padding: 20px 0px 0px 0px;
+}
+
+@media only screen and (max-width:750px){
+    div .quetions{
+        color: black; 
+        width: 90%;
+        margin: auto;
+        text-align:center;
+        padding: 40px 0px;
+        font-size: 20px !important;
+        margin-top: 230px;
+  }
+}
+
+
+
+/* -------------------------------------------------------------- */
+
+
+
+/* Dropdown Button */
+.dropQuestion {
+    background-color: white;
+    color: black;
+    padding: 16px;
+    font-size: 12px;
+    border: none;
+    border-bottom: 1px solid gray;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    background-image: url("image/keyboard_arrow_down.svg");
+    background-position:right;
+    background-position-x: 97% !important;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    margin-bottom: 8px;
+  }
+  
+  /* Dropdown button on hover & focus */
+  .dropQuestion:hover , .dropQuestion:focus {
+    background-color:white;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .answerContenu {
+    display: none;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    padding: 10px 0px;
+  }
+ 
+  /* Show the dropdown menu (use JS to add this class to the .answerContenu container when the user clicks on the dropdown button) */
+  .show {display:block;}
+  
+   
+  
