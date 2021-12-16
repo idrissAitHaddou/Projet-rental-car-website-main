@@ -1,3 +1,6 @@
+A partir d'un site web existant des agences des locations de voitures , vous devez s'inspirer pour créer une maquette et la traduire en page html et css.
+
+
 
 this is maquette of HireFire with figma(Web) : https://www.figma.com/proto/5dLHGCVMSyp0pYOs7uD8p8/location-des-voiteur?node-id=1%3A2&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A2&hide-ui=1
 
